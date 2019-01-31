@@ -199,11 +199,43 @@ ul {
     color: #063974; }
 
 header {
-  background: url(assets/home-image-1.jpg) no-repeat center;
-  background-size: cover;
   height: 90vh;
   padding: 1px;
   position: relative; }
+
+.index header {
+  background: url(assets/home-image-1.jpg) center no-repeat;
+  background-size: cover; }
+
+.index header:before {
+  content: '';
+  background: url(assets/header-box.jpg) center no-repeat;
+  background-size: cover;
+  height: 75vh;
+  width: 40%;
+  position: absolute;
+  bottom: -15%;
+  left: 0; }
+
+.index .hero-text {
+  z-index: 1;
+  max-width: 50%;
+  position: relative;
+  top: 35%;
+  left: 35%; }
+  .index .hero-text h1 {
+    color: #063974; }
+  .index .hero-text h2 {
+    font-size: 3.1rem;
+    letter-spacing: 0.335rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
+    color: #0c5f4c;
+    position: relative;
+    top: 25px;
+    left: 10px; }
 
 .header-nav {
   display: -webkit-box;
@@ -237,22 +269,6 @@ header {
   font-family: "Playfair Display SC", serif;
   font-size: 1.73rem;
   color: #50e3c2; }
-
-header:before {
-  content: '';
-  background: url(assets/header-box.jpg);
-  background-size: cover;
-  height: 75vh;
-  width: 40%;
-  position: absolute;
-  bottom: -15%;
-  left: 0; }
-
-.hero-text h1 {
-  position: absolute;
-  top: 55%;
-  left: 30%;
-  color: #063974; }
 
 .about {
   background: #fafffe;
@@ -294,45 +310,38 @@ header:before {
 .gallery-item {
   width: 31%; }
 
-.info {
+.community {
   background: #fafffe;
   padding: 3% 0; }
-  .info h2 {
-    margin: 0; }
+  .community h2 {
+    margin: 0;
+    padding-left: 50px; }
+  .community p {
+    padding-left: 50px; }
 
-.info-container {
+.community-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.info-item {
+.community-item {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: relative; }
 
-.info-item i {
-  width: 10%;
-  position: relative;
-  z-index: 1; }
-  .info-item i:after {
-    content: '';
-    height: 35px;
-    width: 35px;
-    background: #50e3c2;
-    position: absolute;
-    top: -6px;
-    left: -5px;
-    border-radius: 50%;
-    z-index: -1; }
+.community-item i {
+  width: 1.7rem;
+  height: 1.7rem;
+  text-align: center;
+  background: #50e3c2;
+  border-radius: 50%;
+  padding-top: .3rem;
+  position: absolute;
+  top: .5rem; }
 
-.info-item-text {
-  width: 90%; }
-
-.article {
+.info {
   background: #d2f9f1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,7 +351,7 @@ header:before {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.article-item {
+.info-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,32 +359,32 @@ header:before {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.article-item-text1,
-.article-item-text2,
-.article-item-image1,
-.article-item-image2 {
+.info-item-text1,
+.info-item-text2,
+.info-item-image1,
+.info-item-image2 {
   width: 45%; }
 
-.article-item-image1 img {
+.info-item-image1 img {
   position: relative;
   top: -25px;
   -webkit-box-shadow: 15px 15px 0px 0px #50e3c2;
   box-shadow: 15px 15px 0px 0px #50e3c2; }
 
-.article-item-image2 img {
+.info-item-image2 img {
   position: relative;
   bottom: -25px;
   -webkit-box-shadow: -15px 15px 0px 0px #50e3c2;
   box-shadow: -15px 15px 0px 0px #50e3c2; }
 
-.article-item-text1 {
-  padding: 2% 5% 2% 0; }
+.info-item-text1 {
+  padding: 2% 5% 4% 0; }
 
-.article-item-text2 {
-  padding: 2% 0 2% 5%;
+.info-item-text2 {
+  padding: 2% 0 4% 5%;
   text-align: right; }
 
-.article-bottom-image {
+.info-bottom-image {
   background: url(assets/banner-image.jpg) center no-repeat;
   background-size: cover;
   height: 50vh; }
@@ -399,3 +408,13 @@ footer {
   footer p {
     color: #fff;
     margin: 0; }
+
+.blog header {
+  background: url(assets/blog-image-1.jpg) no-repeat center;
+  background-size: cover;
+  height: 75vh;
+  padding: 1px;
+  position: relative; }
+
+.blog header:before {
+  display: none; }

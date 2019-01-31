@@ -38,91 +38,84 @@
     width: 31%;
 }
 
-// INFO SECTION
+// COMMUNITY SECTION
 
-.info {
+.community {
     background: $lightBackground;
     padding: 3% 0;
     h2 {
         margin: 0;
+        padding-left: 50px;
+    }
+    p {
+        padding-left: 50px;
     }
 }
 
-.info-container {
+.community-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.info-item {
+.community-item {
     width: 50%;
-    display: flex;
     padding: 15px 0;
-}
-
-.info-item i {
-    width: 10%;
-    // text-align: center;
     position: relative;
-    z-index: 1;
-    &:after {
-        content:'';
-        height: 35px;
-        width: 35px;
-        background: $primaryColor;
-        position: absolute;
-        top: -6px;
-        left: -5px;
-        border-radius: 50%;
-        z-index: -1;
-    }
 }
 
-.info-item-text {
-    width: 90%;
+.community-item i {
+    width: 1.7rem;
+    height: 1.7rem;
+    text-align: center;
+    background: $primaryColor;
+    border-radius: 50%;
+    padding-top: .3rem;
+    position: absolute;
+    top: .5rem;
 }
 
-// ARTICLE SECTION
+// INFO SECTION
 
-.article {
+.info {
     background: $darkBackground;
     display: flex;
     flex-direction: column;
 }
 
-.article-item {
+.info-item {
     display: flex;
     justify-content: space-between;
 }
 
-.article-item-text1,
-.article-item-text2,
-.article-item-image1,
-.article-item-image2 {
+.info-item-text1,
+.info-item-text2,
+.info-item-image1,
+.info-item-image2 {
     width: 45%;
 }
 
-.article-item-image1 img {
+.info-item-image1 img {
     position: relative;
     top: -25px;
     @include box-shadow-right;
 }
 
-.article-item-image2 img {
+.info-item-image2 img {
     position: relative;
     bottom: -25px;
     @include box-shadow-left;
 }
 
-.article-item-text1 {
-    padding: 2% 5% 2% 0;
+.info-item-text1 {
+    padding: 2% 5% 4% 0;
 }
 
-.article-item-text2 {
-    padding: 2% 0 2% 5%;
+.info-item-text2 {
+    padding: 2% 0 4% 5%;
     text-align: right;
 }
 
-.article-bottom-image {
+.info-bottom-image {
     background: url(assets/banner-image.jpg) center no-repeat;
     background-size: cover;
     height: 50vh;

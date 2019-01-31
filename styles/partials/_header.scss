@@ -1,11 +1,45 @@
 header {
-    background: url(assets/home-image-1.jpg) no-repeat center;
-    background-size: cover;
     height: 90vh;
     padding: 1px;
     position: relative;
 }   
-    
+
+.index header {
+    background: url(assets/home-image-1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.index header:before {
+    content: '';
+    background: url(assets/header-box.jpg) center no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 40%;
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+}
+
+.index .hero-text {
+    z-index: 1; 
+    max-width: 50%;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    h1 {
+        color: #063974;
+    }
+    h2 {
+        @include h2(3.1rem, .335rem);
+        color: $headerColor1;
+        position: relative;
+        top: 25px;
+        left: 10px;
+    }
+}
+
+// NAVIGATION
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -32,20 +66,3 @@ header {
     color: $primaryColor;
 }
 
-header:before {
-    content: '';
-    background: url(assets/header-box.jpg);
-    background-size: cover;
-    height: 75vh;
-    width: 40%;
-    position: absolute;
-    bottom: -15%;
-    left: 0;
-}
-
-.hero-text h1 {
-    position: absolute;
-    top: 55%;
-    left: 30%;
-    color: #063974;
-}

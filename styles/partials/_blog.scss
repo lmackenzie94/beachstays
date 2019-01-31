@@ -1,0 +1,11 @@
+.blog header {
+    background: url(assets/blog-image-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 75vh;
+    padding: 1px;
+    position: relative;
+}
+
+.blog header:before {
+    display: none;
+}
