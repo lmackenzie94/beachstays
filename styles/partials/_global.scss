@@ -10,8 +10,21 @@ $secondaryFont: 'Playfair Display SC', serif;
 
 // MIXINS
 
-@mixin box-shadow {
-    box-shadow: -10px 10px 0px 0px $primaryColor;
+@mixin box-shadow-left {
+    box-shadow: -15px 15px 0px 0px $primaryColor;
+}
+
+@mixin box-shadow-right {
+    box-shadow: 15px 15px 0px 0px $primaryColor;
+}
+
+@mixin h2($font-size, $letter-spacing) {
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    font-family: $baseFont;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 // HEADINGS
@@ -22,12 +35,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
-    font-family: $baseFont;
-    font-weight: 700;
-    line-height: 2.9rem;
-    margin: 0;
-}
+// use the h2 mixin
 
 // BASE STYLES
 
