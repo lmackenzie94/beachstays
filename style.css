@@ -106,13 +106,15 @@ header { background: url(assets/home-image-1.jpg) no-repeat center; background-s
 
 header:before { content: ''; background: url(assets/header-box.jpg); background-size: cover; height: 75vh; width: 40%; position: absolute; bottom: -15%; left: 0; }
 
-.hero-text h1 { position: absolute; top: 55%; left: 30%; }
+.hero-text h1 { position: absolute; top: 55%; left: 30%; color: #063974; }
 
 .about { background: #fafffe; padding: 130px 0 5% 0; }
 
 .about-container { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .about-text { padding-right: 8%; width: 70%; }
+
+.about-image img { -webkit-box-shadow: -10px 10px 0px 0px #50e3c2; box-shadow: -10px 10px 0px 0px #50e3c2; }
 
 .gallery { background: #d2f9f1; padding: 5% 0; }
 

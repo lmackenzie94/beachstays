@@ -8,6 +8,12 @@ $buttonColor: #063974; //twilight blue
 $baseFont: 'Lato', sans-serif;
 $secondaryFont: 'Playfair Display SC', serif;
 
+// MIXINS
+
+@mixin box-shadow {
+    box-shadow: -10px 10px 0px 0px $primaryColor;
+}
+
 // HEADINGS
 
 h1 {
