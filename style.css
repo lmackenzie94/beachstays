@@ -143,6 +143,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .skip-link:focus {
   left: 0; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 h1 {
   font-family: "Playfair Display SC", serif;
   font-size: 5.56rem;
@@ -164,13 +177,9 @@ img {
 
 ul {
   font-family: "Lato", sans-serif;
-  font-weight: 700;
   font-size: 1rem;
   line-height: 1.45rem;
-  letter-spacing: .05rem;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+  letter-spacing: .05rem; }
   ul a {
     text-decoration: none; }
 
@@ -250,7 +259,11 @@ header {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 700; }
 
 .header-nav a {
   margin: 0 25px;
@@ -416,5 +429,80 @@ footer {
   padding: 1px;
   position: relative; }
 
-.blog header:before {
-  display: none; }
+.blog-main {
+  background: #fafffe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.blog-main article {
+  width: 60%;
+  border-right: 5px solid #50e3c2;
+  border-bottom: 5px solid #50e3c2;
+  position: relative; }
+
+.blog-main aside {
+  width: 25%;
+  height: 100%;
+  background: #fff;
+  margin-top: 5%;
+  border: .5px solid black; }
+  .blog-main aside ul {
+    list-style: disc; }
+
+.blog-post {
+  padding: 2% 7% 2% 13%; }
+
+.blog-image {
+  -webkit-box-shadow: 15px 15px 0px 0px #50e3c2;
+  box-shadow: 15px 15px 0px 0px #50e3c2;
+  width: calc(100% - 10px); }
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8% 0; }
+
+.blog-comments {
+  width: 60%; }
+
+.comment-image {
+  max-width: 80px;
+  width: 10%; }
+
+.comment-text {
+  width: 90%;
+  padding-left: 5%; }
+  .comment-text h2 {
+    margin: 0; }
+
+.blog-form {
+  background: #fafffe; }
+
+.blog-form form {
+  width: 60%;
+  margin: 30px 0; }
+  .blog-form form input {
+    border-bottom: 2px solid #50e3c2;
+    margin-bottom: 5%;
+    padding: 3%; }
+    .blog-form form input:nth-of-type(2) {
+      margin-left: 8%; }
+
+.blog-form input[type=text],
+.blog-form input[type=email] {
+  width: 45%; }
+
+.blog-form textarea {
+  width: 100%;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 3%; }
+
+.blog-form button {
+  width: 100%;
+  margin: 15px 0; }

@@ -6,6 +6,90 @@
     position: relative;
 }
 
-.blog header:before {
-    display: none;
+.blog-main {
+    background: $lightBackground;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-main article {
+    width: 60%;
+    border-right: 5px solid $primaryColor;
+    border-bottom: 5px solid $primaryColor;
+    position: relative;
+}
+
+.blog-main aside {
+    width: 25%;
+    height: 100%;
+    background: #fff;
+    margin-top: 5%;
+    border: .5px solid black;
+    ul {
+        list-style: disc;
+    }
+}
+
+.blog-post {
+    padding: 2% 7% 2% 13%;
+}
+
+.blog-image {
+    @include box-shadow-right;
+    width: calc(100% - 10px); //accounts for width of border and box-shadow
+}
+
+.comment {
+    display: flex;
+    margin: 8% 0;
+}
+
+.blog-comments {
+    width: 60%;
+}
+
+.comment-image {
+    max-width: 80px;
+    width: 10%;
+}
+
+.comment-text {
+    width: 90%;
+    padding-left: 5%;
+    h2 {
+        margin: 0;
+    }
+}
+
+.blog-form {
+    background: $lightBackground;
+}
+
+.blog-form form {
+    width: 60%;
+    margin: 30px 0;
+    input {
+        border-bottom: 2px solid $primaryColor;
+        margin-bottom: 5%;
+        padding: 3%;
+        &:nth-of-type(2) {
+            margin-left: 8%;
+        }
+    }
+}
+
+.blog-form input[type=text],
+.blog-form input[type=email] {
+    width: 45%;
+}
+
+.blog-form textarea {
+    width: 100%;
+    align-self: flex-end;
+    padding: 3%;
+}
+
+.blog-form button {
+    width: 100%;
+    margin: 15px 0;
 }
