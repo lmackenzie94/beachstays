@@ -1,0 +1,47 @@
+// ABOUT SECTION
+
+.about {
+    background: $lightBackground;
+    padding: 130px 0 5% 0;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-text {
+    padding-right: 8%;
+    width: 70%;
+}
+
+// GALLERY SECTION
+
+.gallery {
+    background: $darkBackground;
+    padding: 5% 0;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 31%;
+}
+
+// INFO SECTION
+
+.info {
+    background: $lightBackground;
+    padding: 5% 0;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    width: 50%;
+}

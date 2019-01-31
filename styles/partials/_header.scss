@@ -1,7 +1,50 @@
 header {
     background: url(assets/home-image-1.jpg) no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     padding: 1px;
+    position: relative;
+}   
+    
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        align-items: center;
+    }
 }
 
+.header-nav a {
+    margin: 0 25px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s ease;
+    &:hover {
+        transform: scale(1.4); //why doesn't this work?
+        color: $primaryColor;
+    }
+}
+
+.logo {
+    font-family: $secondaryFont;
+    font-size: 1.73rem;
+    color: $primaryColor;
+}
+
+header:before {
+    content: '';
+    background: url(assets/header-box.jpg);
+    background-size: cover;
+    height: 75vh;
+    width: 40%;
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+}
+
+.hero-text h1 {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
