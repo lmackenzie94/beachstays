@@ -202,7 +202,7 @@ ul {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
-  .button:hover {
+  .button:hover, .button:focus {
     background: #fafffe;
     border: 2px solid #063974;
     color: #063974; }
@@ -274,10 +274,11 @@ header {
   transition: all .3s ease;
   display: inline-block; }
   .header-nav a:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
     color: #50e3c2; }
+
+.header-nav .current {
+  color: #50e3c2;
+  border-bottom: 2px solid #fafffe; }
 
 .logo {
   font-family: "Playfair Display SC", serif;
@@ -426,9 +427,14 @@ footer {
 .blog header {
   background: url(assets/blog-image-1.jpg) no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 70vh;
   padding: 1px;
   position: relative; }
+
+.blog .header-text {
+  color: #fff;
+  position: relative;
+  top: 55%; }
 
 .blog-main {
   background: #fafffe;
@@ -467,7 +473,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 8% 0; }
+  margin-top: 8%; }
 
 .blog-comments {
   width: 60%; }
@@ -484,11 +490,11 @@ footer {
 
 .blog-form {
   background: #fafffe;
-  width: 100%; }
+  width: 100%;
+  margin: 1% 0 5% 0; }
 
 .blog-form form {
-  width: 60%;
-  margin: 30px 0; }
+  width: 60%; }
   .blog-form form input {
     border: none;
     border-bottom: 2px solid #50e3c2;
@@ -512,3 +518,68 @@ footer {
 .blog-form button {
   width: 100%;
   margin: 15px 0; }
+
+.contact header {
+  background: url(assets/contact-image-1.jpg) no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  padding: 1px;
+  position: relative; }
+
+.contact .header-text {
+  color: #fff;
+  position: relative;
+  top: 55%; }
+
+.contact-form {
+  background: #fafffe;
+  width: 100%;
+  margin: 1% 0 5% 0; }
+
+.contact-form form {
+  width: 60%;
+  padding: 4%;
+  background: #fff;
+  -webkit-box-shadow: 15px 15px 0px 0px #50e3c2;
+  box-shadow: 15px 15px 0px 0px #50e3c2; }
+  .contact-form form input {
+    border: none;
+    border-bottom: 2px solid #50e3c2;
+    margin-bottom: 5%;
+    padding: 3%; }
+    .contact-form form input:nth-of-type(2) {
+      margin-left: 6%; }
+
+.contact-form input[type=text],
+.contact-form input[type=email] {
+  width: 46%; }
+
+.contact-form textarea {
+  width: 100%;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 3%;
+  border: 2px solid #50e3c2;
+  resize: none; }
+
+.contact-form button {
+  width: 100%;
+  margin: 15px 0; }
+
+.contact-form .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-info {
+  width: 30%; }
+
+.contact-socials i {
+  font-size: 1.3rem;
+  padding: 5% 5% 5% 0; }

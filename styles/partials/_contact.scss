@@ -1,0 +1,68 @@
+.contact header {
+    background: url(assets/contact-image-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    padding: 1px;
+    position: relative;
+}
+
+.contact .header-text {
+    color: #fff;
+    position: relative;
+    top: 55%;
+}
+
+.contact-form {
+    background: $lightBackground;
+    width: 100%;
+    margin: 1% 0 5% 0;
+}
+
+.contact-form form {
+    width: 60%;
+    padding: 4%;
+    background: #fff;
+    @include box-shadow-right;
+    input {
+        border: none;
+        border-bottom: 2px solid $primaryColor;
+        margin-bottom: 5%;
+        padding: 3%;
+        &:nth-of-type(2) {
+            margin-left: 6%;
+        }
+    }
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email] {
+    width: 46%;
+}
+
+.contact-form textarea {
+    width: 100%;
+    align-self: flex-end;
+    padding: 3%;
+    border: 2px solid $primaryColor;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.contact-form .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    width: 30%;
+}
+
+.contact-socials i {
+    font-size: 1.3rem;
+    padding: 5% 5% 5% 0;
+}

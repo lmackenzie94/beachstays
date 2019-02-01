@@ -83,7 +83,8 @@ ul {
     padding: 10px 15px;
     border: 2px solid $buttonColor;
     transition: all .3s ease;
-    &:hover {
+    &:hover,
+    &:focus {
         background: $lightBackground;
         border: 2px solid $buttonColor;
         color: $buttonColor;

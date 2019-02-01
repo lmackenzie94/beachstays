@@ -60,9 +60,13 @@ header {
     transition: all .3s ease;
     display: inline-block;
     &:hover {
-        transform: scale(1.1);
         color: $primaryColor;
     }
+}
+
+.header-nav .current {
+    color: $primaryColor;
+    border-bottom: 2px solid $lightBackground;
 }
 
 .logo {
