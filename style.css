@@ -295,7 +295,8 @@ header {
   font-family: "Lato", sans-serif;
   line-height: 2.9rem;
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  color: #0c5f4c; }
 
 .about-container {
   display: -webkit-box;
@@ -330,7 +331,14 @@ header {
   padding: 3% 0; }
   .community h2 {
     margin: 0;
-    padding-left: 50px; }
+    padding-left: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 0.16rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
+    color: #0c5f4c; }
   .community p {
     padding-left: 50px; }
 
@@ -354,7 +362,7 @@ header {
   border-radius: 50%;
   padding-top: .3rem;
   position: absolute;
-  top: .5rem; }
+  top: 1.3rem; }
 
 .info {
   background: #d2f9f1;
@@ -365,6 +373,14 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .info h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0.19rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
+    color: #063974; }
 
 .info-item {
   display: -webkit-box;
@@ -414,7 +430,8 @@ header {
     font-family: "Lato", sans-serif;
     line-height: 2.9rem;
     font-weight: 700;
-    margin: 0; }
+    margin: 0;
+    color: #0c5f4c; }
 
 footer {
   background: #2c2c2c;
@@ -434,7 +451,14 @@ footer {
 .blog .header-text {
   color: #fff;
   position: relative;
-  top: 55%; }
+  top: 45%; }
+  .blog .header-text h2 {
+    font-size: 5rem;
+    letter-spacing: 0.19rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0; }
 
 .blog-main {
   background: #fafffe;
@@ -449,7 +473,8 @@ footer {
   width: 60%;
   border-right: 5px solid #50e3c2;
   border-bottom: 5px solid #50e3c2;
-  position: relative; }
+  position: relative;
+  margin-bottom: 25px; }
 
 .blog-main aside {
   width: 25%;
@@ -459,8 +484,25 @@ footer {
   .blog-main aside ul {
     list-style: disc; }
 
+.blog-aside-text h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-family: "Lato", sans-serif;
+  line-height: 2.9rem;
+  font-weight: 700;
+  margin: 0;
+  color: #063974; }
+
 .blog-post {
   padding: 2% 7% 2% 13%; }
+  .blog-post h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0.19rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
+    color: #0c5f4c; }
 
 .blog-image {
   -webkit-box-shadow: 15px 15px 0px 0px #50e3c2;
@@ -473,10 +515,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 8%; }
+  margin-bottom: 10%; }
 
 .blog-comments {
   width: 60%; }
+  .blog-comments h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5%; }
 
 .comment-image {
   max-width: 80px;
@@ -487,6 +537,13 @@ footer {
   padding-left: 5%; }
   .comment-text h2 {
     margin: 0; }
+  .comment-text h3 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    color: #063974; }
+  .comment-text p {
+    margin: 10px 0; }
 
 .blog-form {
   background: #fafffe;
@@ -505,7 +562,12 @@ footer {
 
 .blog-form input[type=text],
 .blog-form input[type=email] {
-  width: 45%; }
+  width: 45%;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6rem;
+  font-weight: 300;
+  letter-spacing: .1rem; }
 
 .blog-form textarea {
   width: 100%;
@@ -513,7 +575,12 @@ footer {
   align-self: flex-end;
   padding: 3%;
   border: 2px solid #50e3c2;
-  resize: none; }
+  resize: none;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6rem;
+  font-weight: 300;
+  letter-spacing: .1rem; }
 
 .blog-form button {
   width: 100%;

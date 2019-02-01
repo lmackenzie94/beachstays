@@ -1,10 +1,10 @@
 // VARIABLES
 
-$primaryColor: #50e3c2; //greenish cyan
+$primaryColour:#50e3c2; //greenish cyan
 $lightBackground: #fafffe; //ice blue
 $darkBackground: #d2f9f1; //light light blue
-$buttonColor: #063974; //twilight blue
-$headerColor1: #0c5f4c; //spruce
+$buttonColour: #063974; //twilight blue
+$headerColour1: #0c5f4c; //spruce
 
 $baseFont: 'Lato', sans-serif;
 $secondaryFont: 'Playfair Display SC', serif;
@@ -12,11 +12,11 @@ $secondaryFont: 'Playfair Display SC', serif;
 // MIXINS
 
 @mixin box-shadow-left {
-    box-shadow: -15px 15px 0px 0px $primaryColor;
+    box-shadow: -15px 15px 0px 0px $primaryColour;
 }
 
 @mixin box-shadow-right {
-    box-shadow: 15px 15px 0px 0px $primaryColor;
+    box-shadow: 15px 15px 0px 0px $primaryColour;
 }
 
 @mixin h2($font-size, $letter-spacing) {
@@ -79,14 +79,14 @@ ul {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background: $buttonColor;
+    background: $buttonColour;
     padding: 10px 15px;
-    border: 2px solid $buttonColor;
+    border: 2px solid $buttonColour;
     transition: all .3s ease;
     &:hover,
     &:focus {
         background: $lightBackground;
-        border: 2px solid $buttonColor;
-        color: $buttonColor;
+        border: 2px solid $buttonColour;
+        color: $buttonColour;
     }
 }

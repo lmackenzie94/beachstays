@@ -7,6 +7,7 @@
 
 .about h2 {
     @include h2(1.75rem, 0.19rem);
+    color: $headerColour1;
 }
 
 .about-container {
@@ -46,6 +47,8 @@
     h2 {
         margin: 0;
         padding-left: 50px;
+        @include h2(1.5rem, 0.16rem);
+        color: $headerColour1;
     }
     p {
         padding-left: 50px;
@@ -67,11 +70,11 @@
     width: 1.7rem;
     height: 1.7rem;
     text-align: center;
-    background: $primaryColor;
+    background: $primaryColour;
     border-radius: 50%;
     padding-top: .3rem;
     position: absolute;
-    top: .5rem;
+    top: 1.3rem;
 }
 
 // INFO SECTION
@@ -80,6 +83,10 @@
     background: $darkBackground;
     display: flex;
     flex-direction: column;
+    h2 {
+        @include h2(1.75rem, 0.19rem)
+        color: $buttonColour;
+    }
 }
 
 .info-item {
@@ -129,6 +136,7 @@
     padding: 8% 0 10% 0;
     h2 {
         @include h2(1.75rem, 0.19rem);
+        color: $headerColour1;
     }
 }
 

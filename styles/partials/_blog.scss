@@ -9,7 +9,10 @@
 .blog .header-text {
     color: #fff;
     position: relative;
-    top: 55%;
+    top: 45%;
+    h2 {
+        @include h2(5rem, 0.19rem);
+    }
 }
 
 .blog-main {
@@ -20,9 +23,10 @@
 
 .blog-main article {
     width: 60%;
-    border-right: 5px solid $primaryColor;
-    border-bottom: 5px solid $primaryColor;
+    border-right: 5px solid $primaryColour;
+    border-bottom: 5px solid $primaryColour;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .blog-main aside {
@@ -35,8 +39,17 @@
     }
 }
 
+.blog-aside-text h2 {
+    @include h2(1.5rem, .05rem);
+    color: $buttonColour;
+}
+
 .blog-post {
     padding: 2% 7% 2% 13%;
+    h2 {
+        @include h2(1.75rem, 0.19rem);
+        color: $headerColour1;
+    }
 }
 
 .blog-image {
@@ -49,11 +62,15 @@
 
 .comment {
     display: flex;
-    margin-top: 8%;
+    margin-bottom: 10%;
 }
 
 .blog-comments {
     width: 60%;
+    h2 {
+        @include h2(1.3rem, 0.05rem);
+        margin-bottom: 5%;
+    }
 }
 
 .comment-image {
@@ -66,6 +83,15 @@
     padding-left: 5%;
     h2 {
         margin: 0;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1rem;
+        letter-spacing: .05rem;
+        color: $buttonColour;
+    }
+    p {
+        margin: 10px 0;
     }
 }
 
@@ -80,7 +106,7 @@
     width: 60%;
     input {
         border: none;
-        border-bottom: 2px solid $primaryColor;
+        border-bottom: 2px solid $primaryColour;
         margin-bottom: 5%;
         padding: 3%;
         &:nth-of-type(2) {
@@ -92,14 +118,24 @@
 .blog-form input[type=text],
 .blog-form input[type=email] {
     width: 45%;
+    font-size: 1rem;
+    font-family: $baseFont;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
 }
 
 .blog-form textarea {
     width: 100%;
     align-self: flex-end;
     padding: 3%;
-    border: 2px solid $primaryColor;
+    border: 2px solid $primaryColour;
     resize: none;
+    font-size: 1rem;
+    font-family: $baseFont;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
 }
 
 .blog-form button {

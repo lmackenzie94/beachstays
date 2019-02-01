@@ -25,7 +25,7 @@
     @include box-shadow-right;
     input {
         border: none;
-        border-bottom: 2px solid $primaryColor;
+        border-bottom: 2px solid $primaryColour;
         margin-bottom: 5%;
         padding: 3%;
         &:nth-of-type(2) {
@@ -43,7 +43,7 @@
     width: 100%;
     align-self: flex-end;
     padding: 3%;
-    border: 2px solid $primaryColor;
+    border: 2px solid $primaryColour;
     resize: none;
 }
 
