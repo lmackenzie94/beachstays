@@ -58,8 +58,9 @@ header {
     text-transform: uppercase;
     color: #fff;
     transition: all .3s ease;
+    display: inline-block;
     &:hover {
-        transform: scale(1.4); //why doesn't this work?
+        transform: scale(1.1);
         color: $primaryColor;
     }
 }

@@ -271,11 +271,12 @@ header {
   color: #fff;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  display: inline-block; }
   .header-nav a:hover {
-    -webkit-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    transform: scale(1.4);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     color: #50e3c2; }
 
 .logo {
@@ -448,8 +449,7 @@ footer {
   width: 25%;
   height: 100%;
   background: #fff;
-  margin-top: 5%;
-  border: .5px solid black; }
+  margin-top: 5%; }
   .blog-main aside ul {
     list-style: disc; }
 
@@ -460,6 +460,8 @@ footer {
   -webkit-box-shadow: 15px 15px 0px 0px #50e3c2;
   box-shadow: 15px 15px 0px 0px #50e3c2;
   width: calc(100% - 10px); }
+  .blog-image img {
+    margin-top: -15%; }
 
 .comment {
   display: -webkit-box;
@@ -481,17 +483,19 @@ footer {
     margin: 0; }
 
 .blog-form {
-  background: #fafffe; }
+  background: #fafffe;
+  width: 100%; }
 
 .blog-form form {
   width: 60%;
   margin: 30px 0; }
   .blog-form form input {
+    border: none;
     border-bottom: 2px solid #50e3c2;
     margin-bottom: 5%;
     padding: 3%; }
     .blog-form form input:nth-of-type(2) {
-      margin-left: 8%; }
+      margin-left: 9%; }
 
 .blog-form input[type=text],
 .blog-form input[type=email] {
@@ -501,7 +505,9 @@ footer {
   width: 100%;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding: 3%; }
+  padding: 3%;
+  border: 2px solid #50e3c2;
+  resize: none; }
 
 .blog-form button {
   width: 100%;
