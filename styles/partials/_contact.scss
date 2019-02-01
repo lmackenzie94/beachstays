@@ -9,13 +9,15 @@
 .contact .header-text {
     color: #fff;
     position: relative;
-    top: 55%;
+    top: 45%;
+    h2 {
+        @include h2(4.5rem, 0.19rem);
+    }
 }
 
 .contact-form {
     background: $lightBackground;
     width: 100%;
-    margin: 1% 0 5% 0;
 }
 
 .contact-form form {
@@ -23,6 +25,8 @@
     padding: 4%;
     background: #fff;
     @include box-shadow-right;
+    position: relative;
+    top: -110px;
     input {
         border: none;
         border-bottom: 2px solid $primaryColour;
@@ -60,9 +64,38 @@
 
 .contact-info {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -90px;
+    p {
+        margin: 0;
+    }
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+    font-family: $baseFont;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+.contact-info a:nth-of-type(2) {
+    margin-top: 7%;
+}
+
+.contact-info a:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .contact-socials i {
     font-size: 1.3rem;
-    padding: 5% 5% 5% 0;
+    padding: 5% 5% 7% 0;
+    transition: all .2s;
+    &:hover {
+        color: $primaryColour;
+        transform: scale(1.1);
+    }
 }

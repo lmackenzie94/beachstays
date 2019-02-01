@@ -46,12 +46,12 @@
     padding: 3% 0;
     h2 {
         margin: 0;
-        padding-left: 50px;
+        padding-left: 60px;
         @include h2(1.5rem, 0.16rem);
         color: $headerColour1;
     }
     p {
-        padding-left: 50px;
+        padding-left: 60px;
     }
 }
 
@@ -67,12 +67,12 @@
 }
 
 .community-item i {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 2rem;
+    height: 2rem;
     text-align: center;
     background: $primaryColour;
     border-radius: 50%;
-    padding-top: .3rem;
+    padding-top: .45rem;
     position: absolute;
     top: 1.3rem;
 }

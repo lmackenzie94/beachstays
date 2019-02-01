@@ -11,7 +11,7 @@
     position: relative;
     top: 45%;
     h2 {
-        @include h2(5rem, 0.19rem);
+        @include h2(4.5rem, 0.19rem);
     }
 }
 
@@ -45,19 +45,26 @@
 }
 
 .blog-post {
-    padding: 2% 7% 2% 13%;
+    padding: 0% 7% 2% 13%;
+    margin-top: -60px;
     h2 {
         @include h2(1.75rem, 0.19rem);
         color: $headerColour1;
+    }
+    p:nth-of-type(1) {
+        font-style: italic;
+        margin-top: 0;
+        span {
+            font-weight: bold;
+        }
     }
 }
 
 .blog-image {
     @include box-shadow-right;
     width: calc(100% - 10px); //accounts for width of border and box-shadow
-    img {
-        margin-top: -15%;
-    }
+    position: relative;
+    top: -110px;
 }
 
 .comment {
@@ -99,14 +106,13 @@
     background: $lightBackground;
     width: 100%;
     margin: 1% 0 5% 0;
-
 }
 
 .blog-form form {
     width: 60%;
     input {
-        border: none;
-        border-bottom: 2px solid $primaryColour;
+        // border: none;
+        // border-bottom: 2px solid $primaryColour;
         margin-bottom: 5%;
         padding: 3%;
         &:nth-of-type(2) {
@@ -118,24 +124,24 @@
 .blog-form input[type=text],
 .blog-form input[type=email] {
     width: 45%;
-    font-size: 1rem;
-    font-family: $baseFont;
-    line-height: 1.6rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
+    // font-size: 1rem;
+    // font-family: $baseFont;
+    // line-height: 1.6rem;
+    // font-weight: 300;
+    // letter-spacing: .1rem;
 }
 
 .blog-form textarea {
     width: 100%;
     align-self: flex-end;
-    padding: 3%;
-    border: 2px solid $primaryColour;
-    resize: none;
-    font-size: 1rem;
-    font-family: $baseFont;
-    line-height: 1.6rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
+    // padding: 3%;
+    // border: 2px solid $primaryColour;
+    // resize: none;
+    // font-size: 1rem;
+    // font-family: $baseFont;
+    // line-height: 1.6rem;
+    // font-weight: 300;
+    // letter-spacing: .1rem;
 }
 
 .blog-form button {

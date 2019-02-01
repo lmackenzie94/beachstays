@@ -90,3 +90,30 @@ ul {
         color: $buttonColour;
     }
 }
+
+// FORMS
+
+form input {
+    border: none;
+    border-bottom: 2px solid $primaryColour;
+}
+
+input[type=text],
+input[type=email] {
+    font-size: 1rem;
+    font-family: $baseFont;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+
+textarea {
+    padding: 3%;
+    border: 2px solid $primaryColour;
+    resize: none;
+    font-size: 1rem;
+    font-family: $baseFont;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
