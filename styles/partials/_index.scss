@@ -3,11 +3,10 @@
 .about {
     background: $lightBackground;
     padding: 130px 0 5% 0;
-}
-
-.about h2 {
-    @include h2(1.75rem, 0.19rem);
-    color: $headerColour1;
+    h2 {
+        @include h2(1.75rem, 0.19rem);
+        color: $headerColour1;
+    }
 }
 
 .about-container {
@@ -64,17 +63,16 @@
     width: 50%;
     padding: 15px 0;
     position: relative;
-}
-
-.community-item i {
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    background: $primaryColour;
-    border-radius: 50%;
-    padding-top: .45rem;
-    position: absolute;
-    top: 1.3rem;
+    i {
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        background: $primaryColour;
+        border-radius: 50%;
+        padding-top: .45rem;
+        position: absolute;
+        top: 1.3rem;
+    }
 }
 
 // INFO SECTION
@@ -139,9 +137,3 @@
         color: $headerColour1;
     }
 }
-
-// .free-trip > div {
-//     width: 75%;
-// }
-
-

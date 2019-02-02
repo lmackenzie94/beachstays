@@ -19,14 +19,22 @@
     background: $lightBackground;
     display: flex;
     justify-content: space-between;
-}
-
-.blog-main article {
-    width: 60%;
-    border-right: 5px solid $primaryColour;
-    border-bottom: 5px solid $primaryColour;
-    position: relative;
-    margin-bottom: 25px;
+    article {
+        width: 60%;
+        border-right: 5px solid $primaryColour;
+        border-bottom: 5px solid $primaryColour;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    aside {
+        width: 25%;
+        height: 100%;
+        background: #fff;
+        margin-top: 5%;
+        ul {
+            list-style: disc;
+        }
+    }
 }
 
 .blog-main aside {
@@ -106,45 +114,24 @@
     background: $lightBackground;
     width: 100%;
     margin: 1% 0 5% 0;
-}
-
-.blog-form form {
-    width: 60%;
-    input {
-        // border: none;
-        // border-bottom: 2px solid $primaryColour;
-        margin-bottom: 5%;
-        padding: 3%;
-        &:nth-of-type(2) {
-            margin-left: 9%;
+    form {
+        width: 60%;
+        input {
+            margin-bottom: 5%;
+            padding: 3%;
+            width: 45%;
+            &:nth-of-type(2) {
+                margin-left: 9%;
+            }
+        }
+        textarea {
+            width: 100%;
+            align-self: flex-end;
+        }
+        button {
+            width: 100%;
+            margin: 15px 0;
         }
     }
-}
+} // is this too much/too deep ?
 
-.blog-form input[type=text],
-.blog-form input[type=email] {
-    width: 45%;
-    // font-size: 1rem;
-    // font-family: $baseFont;
-    // line-height: 1.6rem;
-    // font-weight: 300;
-    // letter-spacing: .1rem;
-}
-
-.blog-form textarea {
-    width: 100%;
-    align-self: flex-end;
-    // padding: 3%;
-    // border: 2px solid $primaryColour;
-    // resize: none;
-    // font-size: 1rem;
-    // font-family: $baseFont;
-    // line-height: 1.6rem;
-    // font-weight: 300;
-    // letter-spacing: .1rem;
-}
-
-.blog-form button {
-    width: 100%;
-    margin: 15px 0;
-}
