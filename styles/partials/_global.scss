@@ -28,6 +28,14 @@ $secondaryFont: 'Playfair Display SC', serif;
     margin: 0;
 }
 
+// MIXIN - MEDIA QUERIES --------------------------
+
+// @media (max-width: 600px) {
+//     @mixin box-shadow-left {
+//         box-shadow: -5px 5px 0px 0px $primaryColour;
+//     }
+// }
+
 // HEADINGS
 
 h1 {
@@ -53,6 +61,7 @@ img {
     display: block;
     max-width: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 ul {

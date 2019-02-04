@@ -121,7 +121,7 @@
             padding: 3%;
             width: 45%;
             &:nth-of-type(2) {
-                margin-left: 9%;
+                margin-left: 8%;
             }
         }
         textarea {
@@ -134,4 +134,100 @@
         }
     }
 } // is this too much/too deep ?
+
+// BLOG - MEDIA QUERIES --------------------------
+
+@media (max-width: 900px) {
+
+    .blog-main article {
+        width: 65%;
+    }
+
+    .blog-main aside {
+        width: 30%;
+    }
+
+    .blog-post {
+        padding: 0% 4% 2% 9%;
+        h2 {
+            font-size: 1.45rem;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+
+    .blog-main {
+        flex-direction: column-reverse;
+    }
+
+    .blog-main article,
+    .blog-main aside,
+    .blog-comments,
+    .blog-form form {
+        width: 100%;
+    }
+
+    .blog-main article {
+        border-right: none;
+    }
+
+    .blog-main aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+        .blog-aside-image {
+            width: 45%;
+            @include box-shadow-right;
+        }
+        .blog-aside-text {
+            width: 50%;
+            padding-right: 2%;
+        }
+    }
+
+    .blog-image {
+        top: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .blog-post {
+        margin-top: 5%;
+        h2 {
+            letter-spacing: .1rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .blog-main aside {
+        flex-direction: column;
+        text-align: center;
+        .blog-aside-image {
+            width: 50%;
+        }
+        .blog-aside-text {
+            width: 100%;
+            padding: 5% 5% 0 5%;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+
+    .blog .header-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .blog-form form input {
+        width: 100%;
+        &:nth-of-type(2) {
+            margin-left: 0;
+        }
+    }
+}
+
 

@@ -73,6 +73,23 @@
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
     <!-- FOOTER END -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+    $(function() {
+
+        $('.hamburger').on('click', function() {
+        $('.hamburger').toggleClass('active'),
+        $('.line1').toggleClass('active'),
+        $('.line2').toggleClass('active'),
+        $('.line3').toggleClass('active');
+        // $('.mainNav').toggleClass('active');
+        });
+    });
+
+    </script>
+
 </body>
 
 </html>
