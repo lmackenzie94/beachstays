@@ -22,6 +22,30 @@
     @include box-shadow-left;
 }
 
+// ABOUT SECTION - MEDIA QUERIES --------------------------
+
+@media (max-width: 900px) {
+
+    .about {
+        padding-top: 5%;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 0 auto 5% auto;
+    }
+}
+
+
 // GALLERY SECTION
 
 .gallery {
@@ -42,7 +66,7 @@
 
 .community {
     background: $lightBackground;
-    padding: 3% 0;
+    padding: 3% 0 5% 0;
     h2 {
         margin: 0;
         padding-left: 60px;
@@ -73,6 +97,16 @@
         position: absolute;
         top: 1.3rem;
     }
+}
+
+// ABOUT SECTION - MEDIA QUERIES --------------------------
+
+@media (max-width: 730px) {
+
+    .community-item {
+        width: 100%;
+    }
+
 }
 
 // INFO SECTION
