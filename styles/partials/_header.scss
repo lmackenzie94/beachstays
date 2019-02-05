@@ -86,6 +86,8 @@ header {
 
 a.logo {
     font-family: $secondaryFont;
+    font-weight: 900;
+    font-style: italic;
     font-size: 1.73rem;
     color: $primaryColour;
     text-decoration: none;
@@ -242,7 +244,7 @@ a.logo {
     }
 
     .header-nav a.logo {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 }
 

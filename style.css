@@ -157,7 +157,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 h1 {
-  font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display SC";
+  font-weight: 900;
+  font-style: italic;
   font-size: 5.56rem;
   margin: 0; }
 
@@ -193,6 +195,8 @@ ul {
 
 .button {
   font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: italic;
   font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: .05rem;
@@ -336,6 +340,8 @@ header {
 
 a.logo {
   font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: italic;
   font-size: 1.73rem;
   color: #50e3c2;
   text-decoration: none;
@@ -473,7 +479,7 @@ a.logo {
     font-size: 1rem;
     letter-spacing: 0.2rem; }
   .header-nav a.logo {
-    font-size: 1.3em; } }
+    font-size: 1.3rem; } }
 
 .about {
   background: #fafffe;
