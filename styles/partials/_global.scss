@@ -5,11 +5,12 @@ $lightBackground: #fafffe; //ice blue
 $darkBackground: #d2f9f1; //light light blue
 $buttonColour: #063974; //twilight blue
 $headerColour1: #0c5f4c; //spruce
-$bodyFontColour: #2c2c2c;
+$bodyFontColour: #2c2c2c; //black
 
 $baseFont: 'Lato', sans-serif;
 $secondaryFont: 'Playfair Display SC', serif;
 
+// MIXINS
 
 @mixin box-shadow-left {
     box-shadow: -15px 15px 0px 0px $primaryColour;
@@ -48,6 +49,10 @@ h1 {
 
 html {
     font-size: 125%;
+}
+
+body {
+    font-size: 1rem;
 }
 
 p {

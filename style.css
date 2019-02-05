@@ -166,6 +166,9 @@ h1 {
 html {
   font-size: 125%; }
 
+body {
+  font-size: 1rem; }
+
 p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -257,25 +260,25 @@ header {
 
 @-webkit-keyframes slide-right {
   from {
-    left: -600px; }
+    left: -700px; }
   to {
     left: 10px; } }
 
 @keyframes slide-right {
   from {
-    left: -600px; }
+    left: -700px; }
   to {
     left: 10px; } }
 
 @-webkit-keyframes slide-left {
   from {
-    right: -600px; }
+    right: -700px; }
   to {
     right: 0; } }
 
 @keyframes slide-left {
   from {
-    right: -600px; }
+    right: -700px; }
   to {
     right: 0; } }
 
