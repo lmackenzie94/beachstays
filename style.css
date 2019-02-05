@@ -289,7 +289,7 @@ header {
     list-style: none;
     font-weight: 700; }
 
-.header-nav a {
+.header-nav ul a {
   margin: 0 25px;
   text-transform: uppercase;
   color: #fff;
@@ -297,7 +297,7 @@ header {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   display: inline-block; }
-  .header-nav a:hover {
+  .header-nav ul a:hover {
     color: #50e3c2; }
 
 .header-nav .current {
@@ -375,9 +375,43 @@ a.logo {
 
 @media (max-width: 900px) {
   .header-nav ul {
-    display: none; }
-  .hamburger {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: -270px;
+    right: 0;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), color-stop(85%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 85%);
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 85%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 85%);
+    padding-top: 60px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .header-nav ul li {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      .header-nav ul li:hover {
+        background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), color-stop(95%, rgba(0, 0, 0, 0)));
+        background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 95%);
+        background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 95%);
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 95%); }
+  .header-nav.active ul {
+    top: 0;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
     display: block; }
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 10; }
   .index .hero-text h1 {
     font-size: 4.5rem; }
   .index .hero-text h2 {
@@ -928,3 +962,20 @@ footer {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
+
+@media (max-width: 900px) {
+  .contact-form .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contact-form form {
+    width: 100%; }
+  .contact-info {
+    width: 100%;
+    text-align: center;
+    padding: 3% 0 5% 0; }
+    .contact-info i {
+      padding: 2%; }
+    .contact-info a {
+      margin: 0; } }

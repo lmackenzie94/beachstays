@@ -53,7 +53,7 @@ header {
     }
 }
 
-.header-nav a {
+.header-nav ul a {
     margin: 0 25px;
     text-transform: uppercase;
     color: #fff;
@@ -141,11 +141,34 @@ a.logo {
 @media (max-width: 900px) {
 
     .header-nav ul {
-        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: -270px;
+        right: 0;
+        background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0) 85%);
+        padding-top: 60px;
+        transition: all .5s ease;
+        li {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            transition: all .3s ease;
+            &:hover {
+                background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0) 95%);
+            }
+        }
+    }
+
+    .header-nav.active ul {
+        top: 0;
+        transition: all .5s ease;
+        display: block;
     }
 
     .hamburger {
         display: block;
+        position: relative;
+        z-index: 10;
     }
 
     .index .hero-text {
