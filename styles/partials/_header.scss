@@ -20,6 +20,17 @@ header {
     left: 0;
 }
 
+// HEADER ANIMATION
+@keyframes slide-right {
+    from {left: -600px;}
+    to {left: 10px;}
+}
+
+@keyframes slide-left {
+    from {right: -600px;}
+    to {right: 0;}
+}
+
 .hero-text {
     z-index: 1; 
     max-width: 50%;
@@ -28,6 +39,8 @@ header {
     left: 30%;
     h1 {
         color: #063974;
+        position: relative;
+        animation: slide-left 1s;
     }
     h2 {
         @include h2(3.1rem, .335rem);
@@ -35,6 +48,7 @@ header {
         position: relative;
         top: 25px;
         left: 10px;
+        animation: slide-right 1s;
     }
 }
 
@@ -59,7 +73,8 @@ header {
     color: #fff;
     transition: all .3s ease;
     display: inline-block;
-    &:hover {
+    &:hover,
+    &:focus {
         color: $primaryColour;
     }
 }
@@ -146,9 +161,12 @@ a.logo {
         position: absolute;
         top: -270px;
         right: 0;
-        background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0) 85%);
+        background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0) 95%);
         padding-top: 60px;
         transition: all .5s ease;
+        &:focus-within {
+            top: 0;
+        }
         li {
             text-align: center;
             padding: 10px 0;
@@ -175,7 +193,7 @@ a.logo {
         z-index: 10;
     }
 
-    .index .hero-text {
+    .hero-text {
         h1 {
             font-size: 4.5rem;
         }
@@ -191,7 +209,7 @@ a.logo {
 
 @media (max-width: 730px) {
 
-    .index .hero-text {
+    .hero-text {
         h1 {
             font-size: 3.5rem;
         }
@@ -202,7 +220,7 @@ a.logo {
   }
 
 @media (max-width: 600px) {
-    .index .hero-text {
+    .hero-text {
         h1 {
             font-size: 2.5rem;
         }
@@ -213,7 +231,7 @@ a.logo {
 }
 
 @media (max-width: 415px) {
-    .index .hero-text {
+    .hero-text {
         h1 {
             font-size: 1.7rem;
         }

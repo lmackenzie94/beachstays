@@ -44,13 +44,25 @@
     margin-top: 5%;
     ul {
         list-style: disc;
+        color: $bodyFontColour;
     }
 }
 
-.blog-aside-text h2 {
-    @include h2(1.5rem, .05rem);
-    color: $buttonColour;
+.blog-aside-text {
+    h2 {
+        @include h2(1.5rem, .05rem);
+        color: $buttonColour;
+    }
+    a {
+        text-decoration: none;
+        margin-bottom: 5%;
+        display: inline-block;
+    }
+    p {
+        margin: 0;
+    }
 }
+
 
 .blog-post {
     padding: 0% 7% 2% 13%;
@@ -61,7 +73,8 @@
     }
     p:nth-of-type(1) {
         font-style: italic;
-        margin-top: 0;
+        margin: 0 0 5% 0;
+        color: $buttonColour;
         span {
             font-weight: bold;
         }
@@ -85,6 +98,7 @@
     h2 {
         @include h2(1.3rem, 0.05rem);
         margin-bottom: 5%;
+        color: $bodyFontColour;
     }
 }
 

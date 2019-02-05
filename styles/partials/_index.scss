@@ -60,6 +60,15 @@
 
 .gallery-item {
     width: 31%;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    transform: scale(1.3);
+    transition: all .3s ease;
+    &:hover {
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 600px) {
@@ -86,6 +95,7 @@
         padding-left: 60px;
         @include h2(1.5rem, 0.16rem);
         color: $headerColour1;
+        transition: all .3s ease;
     }
     p {
         padding-left: 60px;
@@ -101,6 +111,13 @@
     width: 50%;
     padding: 15px 0;
     position: relative;
+    &:hover h2 {
+        font-size: 1.75rem;
+    }
+    &:hover i {
+        color: $primaryColour;
+        background: $bodyFontColour;
+    }
     i {
         width: 2rem;
         height: 2rem;
@@ -110,6 +127,7 @@
         padding-top: .45rem;
         position: absolute;
         top: 1.3rem;
+        transition: all .3s ease;
     }
 }
 
@@ -128,7 +146,6 @@
     background: $darkBackground;
     display: flex;
     flex-direction: column;
-    padding: 3% 0;
     h2 {
         @include h2(1.75rem, 0.19rem);
         color: $buttonColour;
@@ -196,7 +213,6 @@
     .info-item-image2 {
         margin: 2% auto;
         width: 75%;
-
     }
 
     .info-item:nth-of-type(1) {
@@ -210,6 +226,10 @@
     .info-item img {
         top: 0;
         bottom: 0;
+    }
+
+    .info-item-image1 img {
+        margin-top: -10%;
     }
 }
 
