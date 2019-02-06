@@ -1,10 +1,20 @@
 footer {
     background: #2c2c2c;
-    text-align: center;
     padding: 5px;
+    text-align: center;
+    position: relative;
     p {
         color: #fff;
         margin: 0;
+    }
+    a {
+        color: $primaryColour;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
     }
 }
 

@@ -143,7 +143,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .skip-link:focus {
   left: 0; }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -167,20 +167,18 @@ html {
   font-size: 125%; }
 
 body {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #2c2c2c; }
 
 p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
-  letter-spacing: .1rem;
-  color: #2c2c2c; }
+  letter-spacing: .1rem; }
 
 img {
   display: block;
   max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   width: 100%; }
 
 ul {
@@ -211,7 +209,8 @@ ul {
   border: 2px solid #063974;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  display: inline-block; }
   .button:hover, .button:focus {
     background: #fafffe;
     border: 2px solid #063974;
@@ -515,7 +514,7 @@ a.logo {
 
 @media (max-width: 900px) {
   .about {
-    padding-top: 5%; }
+    padding: 5% 0 10% 0; }
   .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -736,11 +735,22 @@ a.logo {
 
 footer {
   background: #2c2c2c;
+  padding: 5px;
   text-align: center;
-  padding: 5px; }
+  position: relative; }
   footer p {
     color: #fff;
     margin: 0; }
+  footer a {
+    color: #50e3c2;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 1.2rem; }
 
 @media (max-width: 600px) {
   footer p {
@@ -902,10 +912,12 @@ footer {
     width: 65%; }
   .blog-main aside {
     width: 30%; }
+    .blog-main aside h2 {
+      font-size: 1.4rem; }
   .blog-post {
     padding: 0% 4% 2% 9%; }
     .blog-post h2 {
-      font-size: 1.45rem; } }
+      font-size: 1.4rem; } }
 
 @media (max-width: 730px) {
   .blog-main {

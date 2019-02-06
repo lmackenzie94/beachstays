@@ -63,7 +63,6 @@
     }
 }
 
-
 .blog-post {
     padding: 0% 7% 2% 13%;
     margin-top: -60px;
@@ -159,12 +158,15 @@
 
     .blog-main aside {
         width: 30%;
+        h2 {
+            font-size: 1.4rem;
+        }
     }
 
     .blog-post {
         padding: 0% 4% 2% 9%;
         h2 {
-            font-size: 1.45rem;
+            font-size: 1.4rem;
         }
     }
 }
