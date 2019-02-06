@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Beachstays - Contact</title>
+    <title>Contact Us!</title>
     <link type="image/png" href="assets/favicon1.png" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display+SC:900i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -13,7 +13,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="contact">
+<body class="contact" id="top">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- HEADER -->
     <header>
@@ -80,6 +80,7 @@
     <!-- FOOTER END -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     
     <script>
     $(function() {
@@ -90,6 +91,10 @@
         $('.line2').toggleClass('active'),
         $('.line3').toggleClass('active');
         $('.header-nav').toggleClass('active');
+        });
+
+        $('a').smoothScroll({
+            speed: 600
         });
 
     });

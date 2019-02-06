@@ -26,15 +26,6 @@
         position: relative;
         margin-bottom: 25px;
     }
-    aside {
-        width: 25%;
-        height: 100%;
-        background: #fff;
-        margin-top: 5%;
-        ul {
-            list-style: disc;
-        }
-    }
 }
 
 .blog-main aside {
@@ -43,12 +34,19 @@
     background: #fff;
     margin-top: 5%;
     ul {
-        list-style: disc;
+        list-style: none;
         color: $bodyFontColour;
+        padding-left: 5%;
+        li:before {
+            content: '\2022';
+            color: $primaryColour;
+            padding-right: 1rem;
+        }
     }
 }
 
 .blog-aside-text {
+    padding-left: 5%;
     h2 {
         @include h2(1.5rem, .05rem);
         color: $buttonColour;
@@ -61,6 +59,13 @@
     p {
         margin: 0;
     }
+}
+
+.blog-aside-image {
+    width: 95%;
+    position: relative;
+    right: -5%;
+    margin-top: -5%;
 }
 
 .blog-post {
@@ -193,9 +198,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 5%;
+        background: $lightBackground;
         .blog-aside-image {
             width: 45%;
             @include box-shadow-right;
+            position: static;
         }
         .blog-aside-text {
             width: 50%;
@@ -242,6 +249,9 @@
             background: #fff;
             border: 20px solid $primaryColour;
             z-index: -2;
+            ul {
+                padding-left: 0;
+            }
         }
     }
 

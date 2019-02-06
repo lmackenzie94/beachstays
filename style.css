@@ -789,13 +789,6 @@ footer {
     border-bottom: 5px solid #50e3c2;
     position: relative;
     margin-bottom: 25px; }
-  .blog-main aside {
-    width: 25%;
-    height: 100%;
-    background: #fff;
-    margin-top: 5%; }
-    .blog-main aside ul {
-      list-style: disc; }
 
 .blog-main aside {
   width: 25%;
@@ -803,25 +796,36 @@ footer {
   background: #fff;
   margin-top: 5%; }
   .blog-main aside ul {
-    list-style: disc;
-    color: #2c2c2c; }
+    list-style: none;
+    color: #2c2c2c;
+    padding-left: 5%; }
+    .blog-main aside ul li:before {
+      content: '\2022';
+      color: #50e3c2;
+      padding-right: 1rem; }
 
-.blog-aside-text h2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.05rem;
-  font-family: "Lato", sans-serif;
-  line-height: 2.9rem;
-  font-weight: 700;
-  margin: 0;
-  color: #063974; }
+.blog-aside-text {
+  padding-left: 5%; }
+  .blog-aside-text h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2.9rem;
+    font-weight: 700;
+    margin: 0;
+    color: #063974; }
+  .blog-aside-text a {
+    text-decoration: none;
+    margin-bottom: 5%;
+    display: inline-block; }
+  .blog-aside-text p {
+    margin: 0; }
 
-.blog-aside-text a {
-  text-decoration: none;
-  margin-bottom: 5%;
-  display: inline-block; }
-
-.blog-aside-text p {
-  margin: 0; }
+.blog-aside-image {
+  width: 95%;
+  position: relative;
+  right: -5%;
+  margin-top: -5%; }
 
 .blog-post {
   padding: 0% 7% 2% 13%;
@@ -942,11 +946,13 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    background: #fafffe; }
     .blog-main aside .blog-aside-image {
       width: 45%;
       -webkit-box-shadow: 15px 15px 0px 0px #50e3c2;
-      box-shadow: 15px 15px 0px 0px #50e3c2; } }
+      box-shadow: 15px 15px 0px 0px #50e3c2;
+      position: static; } }
     @media (max-width: 730px) and (max-width: 600px) {
       .blog-main aside .blog-aside-image {
         -webkit-box-shadow: 8px 8px 0px 0px #50e3c2;
@@ -992,6 +998,8 @@ footer {
       background: #fff;
       border: 20px solid #50e3c2;
       z-index: -2; }
+      .blog-main aside .blog-aside-text ul {
+        padding-left: 0; }
   .blog .header-text h2 {
     font-size: 3rem; }
   .blog-form form input {
