@@ -143,7 +143,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .skip-link:focus {
   left: 0; }
 
-.visuallyHidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -260,25 +260,25 @@ header {
 
 @-webkit-keyframes slide-right {
   from {
-    left: -700px; }
+    left: -900px; }
   to {
     left: 10px; } }
 
 @keyframes slide-right {
   from {
-    left: -700px; }
+    left: -900px; }
   to {
     left: 10px; } }
 
 @-webkit-keyframes slide-left {
   from {
-    right: -700px; }
+    right: -900px; }
   to {
     right: 0; } }
 
 @keyframes slide-left {
   from {
-    right: -700px; }
+    right: -900px; }
   to {
     right: 0; } }
 
@@ -488,7 +488,7 @@ a.logo {
   background: #fafffe;
   padding: 130px 0 5% 0; }
   .about h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: 0.19rem;
     font-family: "Lato", sans-serif;
     line-height: 2.9rem;
@@ -599,7 +599,7 @@ a.logo {
   padding: 15px 0;
   position: relative; }
   .community-item:hover h2 {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .community-item:hover i {
     color: #50e3c2;
     background: #2c2c2c; }
@@ -631,7 +631,7 @@ a.logo {
   -ms-flex-direction: column;
   flex-direction: column; }
   .info h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: 0.19rem;
     font-family: "Lato", sans-serif;
     line-height: 2.9rem;
@@ -726,7 +726,7 @@ a.logo {
   text-align: center;
   padding: 8% 0 10% 0; }
   .free-trip h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: 0.19rem;
     font-family: "Lato", sans-serif;
     line-height: 2.9rem;
@@ -818,7 +818,8 @@ footer {
   .blog-aside-text a {
     text-decoration: none;
     margin-bottom: 5%;
-    display: inline-block; }
+    display: inline-block;
+    color: #063974; }
   .blog-aside-text p {
     margin: 0; }
 
@@ -832,7 +833,7 @@ footer {
   padding: 0% 7% 2% 13%;
   margin-top: -60px; }
   .blog-post h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: 0.19rem;
     font-family: "Lato", sans-serif;
     line-height: 2.9rem;

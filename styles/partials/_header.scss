@@ -22,12 +22,12 @@ header {
 
 // HEADER ANIMATION
 @keyframes slide-right {
-    from {left: -700px;}
+    from {left: -900px;}
     to {left: 10px;}
 }
 
 @keyframes slide-left {
-    from {right: -700px;}
+    from {right: -900px;}
     to {right: 0;}
 }
 
